@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Safety Squad</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Sidebar Navigation -->
+    <nav class="sidebar">
+        <div class="logo-section">
+            <h2>🦸 Safety Squad</h2>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#" onclick="showPage('home')">🏠 Home</a></li>
+            <li><a href="#" onclick="showPage('superheroes')">⭐ Superheroes</a></li>
+            <li><a href="#" onclick="showPage('comics')">📚 Comics</a></li>
+            <li><a href="#" onclick="showPage('laws')">⚖️ Laws & Acts</a></li>
+            <li><a href="#" onclick="showPage('quizzes')">🎮 Quizzes</a></li>
+            <li><a href="#" onclick="showPage('emergency')" class="emergency-btn">🚨 Emergency</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+        <!-- Home Page -->
+        <div id="home" class="page active">
+            <!-- Animated Background Particles -->
+            <canvas id="particles-canvas"></canvas>
+            
+            <div class="hero-section">
+                <div class="title-container">
+                    <h1 class="website-title animated-title">
+                        <span class="letter">S</span>
+                        <span class="letter">u</span>
+                        <span class="letter">p</span>
+                        <span class="letter">e</span>
+                        <span class="letter">r</span>
+                        <span class="letter"> </span>
+                        <span class="letter">S</span>
+                        <span class="letter">a</span>
+                        <span class="letter">f</span>
+                        <span class="letter">e</span>
+                        <span class="letter">t</span>
+                        <span class="letter">y</span>
+                        <span class="letter"> </span>
+                        <span class="letter">S</span>
+                        <span class="letter">q</span>
+                        <span class="letter">u</span>
+                        <span class="letter">a</span>
+                        <span class="letter">d</span>
+                    </h1>
+                </div>
+                <p class="tagline fade-in">Learning About Safety Through Superhero Adventures! 🦸‍♀️🦸‍♂️</p>
+                
+                <div class="hero-gallery">
+                    <div class="hero-showcase">
+                        <div class="hero-card" data-tilt>
+                            <div class="glow-effect"></div>
+                            <img src="img2.jpeg" alt="Captain Consent" class="hero-main-img">
+                            <div class="hero-name">Captain Consent</div>
+                        </div>
+                        <div class="hero-card" data-tilt>
+                            <div class="glow-effect"></div>
+                            <img src="img4.jpeg" alt="Detective Divya" class="hero-main-img">
+                            <div class="hero-name">Detective Divya</div>
+                        </div>
+                        <div class="hero-card" data-tilt>
+                            <div class="glow-effect"></div>
+                            <img src="img1.png" alt="Signal Surya" class="hero-main-img">
+                            <div class="hero-name">Signal Surya</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="cta-buttons">
+                    <button class="cta-btn ripple-effect" onclick="showPage('superheroes')">
+                        <span>Meet Our Heroes</span>
+                        <div class="button-shine"></div>
+                    </button>
+                    <button class="cta-btn secondary ripple-effect" onclick="showPage('quizzes')">
+                        <span>Take a Quiz</span>
+                        <div class="button-shine"></div>
+                    </button>
+                </div>
+                
+                <!-- Scroll indicator -->
+                <div class="scroll-indicator">
+                    <div class="mouse">
+                        <div class="wheel"></div>
+                    </div>
+                    <p>Explore More</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Superheroes Page -->
+        <div id="superheroes" class="page">
+            <h1 class="page-title slide-in">Meet Our Super Safety Squad! 🦸</h1>
+            <div class="superhero-grid">
+                <div class="superhero-card flip-card" onclick="this.classList.toggle('flipped')">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="hero-image-container">
+                                <div class="hero-glow"></div>
+                                <img src="img2.jpeg" alt="Captain Consent" class="superhero-img">
+                            </div>
+                            <h3>Captain Consent</h3>
+                            <p><strong>Power:</strong> The Power of Permission!</p>
+                            <div class="tap-hint">👆 Tap to learn more!</div>
+                        </div>
+                        <div class="flip-card-back">
+                            <h3>Captain Consent</h3>
+                            <p>Captain Consent teaches kids that their body belongs to them! She helps children understand that they have the right to say "NO" to any touch that makes them uncomfortable. Remember: "My body, my choice!"</p>
+                            <div class="hero-motto">"Your voice matters, use it loud and clear!"</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="superhero-card flip-card" onclick="this.classList.toggle('flipped')">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="hero-image-container">
+                                <div class="hero-glow"></div>
+                                <img src="img4.jpeg" alt="Detective Divya" class="superhero-img">
+                            </div>
+                            <h3>Detective Divya</h3>
+                            <p><strong>Power:</strong> The Sight of Safety!</p>
+                            <div class="tap-hint">👆 Tap to learn more!</div>
+                        </div>
+                        <div class="flip-card-back">
+                            <h3>Detective Divya</h3>
+                            <p>Detective Divya has super detective skills to spot danger and unsafe situations. She teaches kids to recognize warning signs and trust their instincts. If something feels wrong, it probably is!</p>
+                            <div class="hero-motto">"Trust your gut, it's your best friend!"</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="superhero-card flip-card" onclick="this.classList.toggle('flipped')">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="hero-image-container">
+                                <div class="hero-glow"></div>
+                                <div class="hero-placeholder">⚖️</div>
+                            </div>
+                            <h3>Justice Jaya</h3>
+                            <p><strong>Power:</strong> The Shield of Rights!</p>
+                            <div class="tap-hint">👆 Tap to learn more!</div>
+                        </div>
+                        <div class="flip-card-back">
+                            <h3>Justice Jaya</h3>
+                            <p>Justice Jaya knows all about children's rights and laws! She teaches kids about the POCSO Act and other laws that protect them. Every child deserves safety, dignity, and respect!</p>
+                            <div class="hero-motto">"Rights for all, justice for everyone!"</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="superhero-card flip-card" onclick="this.classList.toggle('flipped')">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="hero-image-container">
+                                <div class="hero-glow"></div>
+                                <img src="img1.png" alt="Signal Surya" class="superhero-img">
+                            </div>
+                            <h3>Signal Surya</h3>
+                            <p><strong>Power:</strong> The Voice of Help!</p>
+                            <div class="tap-hint">👆 Tap to learn more!</div>
+                        </div>
+                        <div class="flip-card-back">
+                            <h3>Signal Surya</h3>
+                            <p>Signal Surya teaches kids how to ask for help and who to contact in emergencies. He knows all the important numbers like CHILDLINE 1098! Never be afraid to speak up!</p>
+                            <div class="hero-motto">"Help is just a call away!"</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="superhero-card flip-card" onclick="this.classList.toggle('flipped')">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="hero-image-container">
+                                <div class="hero-glow"></div>
+                                <img src="img3.jpeg" alt="Guardian Gopal" class="superhero-img">
+                            </div>
+                            <h3>Guardian Gopal</h3>
+                            <p><strong>Power:</strong> The Fortress of Protection!</p>
+                            <div class="tap-hint">👆 Tap to learn more!</div>
+                        </div>
+                        <div class="flip-card-back">
+                            <h3>Guardian Gopal</h3>
+                            <p>Guardian Gopal creates safe spaces and teaches about boundaries. He helps kids understand good touch vs bad touch and how to stay safe online and offline!</p>
+                            <div class="hero-motto">"Strong boundaries make strong heroes!"</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="superhero-card flip-card" onclick="this.classList.toggle('flipped')">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="hero-image-container">
+                                <div class="hero-glow"></div>
+                                <img src="img.jpeg" alt="Counsellor Chitra" class="superhero-img">
+                            </div>
+                            <h3>Counsellor Chitra</h3>
+                            <p><strong>Power:</strong> The Heart of Healing!</p>
+                            <div class="tap-hint">👆 Tap to learn more!</div>
+                        </div>
+                        <div class="flip-card-back">
+                            <h3>Counsellor Chitra</h3>
+                            <p>Counsellor Chitra is the kindest superhero who helps children express their feelings. She teaches that it's okay to talk about problems and that healing is possible. Your feelings matter!</p>
+                            <div class="hero-motto">"Talking about feelings is a superpower!"</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Comics Page -->
+        <div id="comics" class="page">
+            <h1 class="page-title">Safety Comics! 📚</h1>
+            <div class="comics-container">
+                <div class="comic-strip">
+                    <h2>Captain Consent's Adventure: "The Birthday Party"</h2>
+                    <div class="comic-hero-banner">
+                        <img src="img2.jpg" alt="Captain Consent" class="comic-hero-img">
+                    </div>
+                    <div class="comic-panels">
+                        <div class="comic-panel">
+                            <div class="panel-number">1</div>
+                            <div class="panel-content">
+                                <p class="panel-text">👧 Priya is excited for her cousin's birthday party!</p>
+                                <p class="speech-bubble">"I can't wait for the party!"</p>
+                            </div>
+                        </div>
+                        <div class="comic-panel">
+                            <div class="panel-number">2</div>
+                            <div class="panel-content">
+                                <p class="panel-text">👨 Uncle Ram tries to force a hug. Priya feels uncomfortable.</p>
+                                <p class="speech-bubble">"Come give uncle a hug!"</p>
+                            </div>
+                        </div>
+                        <div class="comic-panel">
+                            <div class="panel-number">3</div>
+                            <div class="panel-content">
+                                <p class="panel-text">✨ Captain Consent appears!</p>
+                                <p class="speech-bubble hero">"Wait! Remember, Priya gets to choose!"</p>
+                            </div>
+                        </div>
+                        <div class="comic-panel">
+                            <div class="panel-number">4</div>
+                            <div class="panel-content">
+                                <p class="panel-text">👧 Priya remembers her rights!</p>
+                                <p class="speech-bubble">"I'd like to wave instead, please!"</p>
+                            </div>
+                        </div>
+                        <div class="comic-panel">
+                            <div class="panel-number">5</div>
+                            <div class="panel-content">
+                                <p class="panel-text">👨 Uncle respects her choice.</p>
+                                <p class="speech-bubble">"That's perfectly fine, Priya! *waves*"</p>
+                            </div>
+                        </div>
+                        <div class="comic-panel">
+                            <div class="panel-number">6</div>
+                            <div class="panel-content">
+                                <p class="panel-text">✨ Captain Consent is proud!</p>
+                                <p class="speech-bubble hero">"Great job! You used your voice! 💪"</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comic-lesson">
+                        <strong>🌟 Lesson:</strong> You NEVER have to hug, kiss, or touch anyone if you don't want to - even family members! Your body belongs to YOU!
+                    </div>
+                </div>
+
+                <div class="comic-strip">
+                    <h2>Detective Divya's Case: "The Internet Mystery"</h2>
+                    <div class="comic-hero-banner">
+                        <img src="img4.jpg" alt="Detective Divya" class="comic-hero-img">
+                    </div>
+                    <div class="comic-panels">
+                        <div class="comic-panel">
+                            <div class="panel-number">1</div>
+                            <div class="panel-content">
+                                <p class="panel-text">💻 Raj is playing online games.</p>
+                                <p class="speech-bubble">"This game is so fun!"</p>
+                            </div>
+                        </div>
+                        <div class="comic-panel">
+                            <div class="panel-number">2</div>
+                            <div class="panel-content">
+                                <p class="panel-text">📱 A stranger messages asking for his address.</p>
+                                <p class="speech-bubble stranger">"Where do you live? Let's meet!"</p>
+                            </div>
+                        </div>
+                        <div class="comic-panel">
+                            <div class="panel-number">3</div>
+                            <div class="panel-content">
+                                <p class="panel-text">🔍 Detective Divya's danger sense tingles!</p>
+                                <p class="speech-bubble hero">"Wait! This is suspicious!"</p>
+                            </div>
+                        </div>
+                        <div class="comic-panel">
+                            <div class="panel-number">4</div>
+                            <div class="panel-content">
+                                <p class="panel-text">👦 Raj remembers internet safety rules.</p>
+                                <p class="speech-bubble">"I should tell mom about this!"</p>
+                            </div>
+                        </div>
+                        <div class="comic-panel">
+                            <div class="panel-number">5</div>
+                            <div class="panel-content">
+                                <p class="panel-text">👩 Mom blocks the stranger and reports them.</p>
+                                <p class="speech-bubble">"Good job telling me, Raj!"</p>
+                            </div>
+                        </div>
+                        <div class="comic-panel">
+                            <div class="panel-number">6</div>
+                            <div class="panel-content">
+                                <p class="panel-text">🔍 Detective Divya celebrates!</p>
+                                <p class="speech-bubble hero">"You trusted your instincts! 🎉"</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comic-lesson">
+                        <strong>🌟 Lesson:</strong> Never share personal information online! If someone you don't know asks for details or wants to meet, tell a trusted adult immediately!
+                    </div>
+                </div>
+
+                <div class="comic-strip">
+                    <h2>Signal Surya's Mission: "The Emergency Call"</h2>
+                    <div class="comic-hero-banner">
+                        <img src="img1.jpg" alt="Signal Surya" class="comic-hero-img">
+                    </div>
+                    <div class="comic-panels">
+                        <div class="comic-panel">
+                            <div class="panel-number">1</div>
+                            <div class="panel-content">
+                                <p class="panel-text">😰 Meera's friend is being hurt at home.</p>
+                                <p class="speech-bubble">"I'm scared. Someone is hurting me..."</p>
+                            </div>
+                        </div>
+                        <div class="comic-panel">
+                            <div class="panel-number">2</div>
+                            <div class="panel-content">
+                                <p class="panel-text">💭 Meera doesn't know what to do.</p>
+                                <p class="speech-bubble">"How can I help my friend?"</p>
+                            </div>
+                        </div>
+                        <div class="comic-panel">
+                            <div class="panel-number">3</div>
+                            <div class="panel-content">
+                                <p class="panel-text">📡 Signal Surya appears!</p>
+                                <p class="speech-bubble hero">"Call CHILDLINE 1098! They can help!"</p>
+                            </div>
+                        </div>
+                        <div class="comic-panel">
+                            <div class="panel-number">4</div>
+                            <div class="panel-content">
+                                <p class="panel-text">📞 Meera calls for help.</p>
+                                <p class="speech-bubble">"Hello, CHILDLINE? My friend needs help!"</p>
+                            </div>
+                        </div>
+                        <div class="comic-panel">
+                            <div class="panel-number">5</div>
+                            <div class="panel-content">
+                                <p class="panel-text">👮 Help arrives quickly!</p>
+                                <p class="speech-bubble">"We're here to help. You did the right thing!"</p>
+                            </div>
+                        </div>
+                        <div class="comic-panel">
+                            <div class="panel-number">6</div>
+                            <div class="panel-content">
+                                <p class="panel-text">📡 Signal Surya is proud!</p>
+                                <p class="speech-bubble hero">"You saved your friend by speaking up! 🌟"</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comic-lesson">
+                        <strong>🌟 Lesson:</strong> If someone is in danger, don't keep it a secret! Call CHILDLINE 1098 or tell a trusted adult. You could save someone's life!
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Laws & Acts Page -->
+        <div id="laws" class="page">
+            <h1 class="page-title">Laws That Protect You! ⚖️</h1>
+            <div class="laws-container">
+                <div class="law-card highlight">
+                    <h3>🛡️ POCSO Act 2012</h3>
+                    <p><strong>Protection of Children from Sexual Offences Act</strong></p>
+                    <p>This special law protects ALL children under 18 years old from sexual abuse and exploitation.</p>
+                    <ul>
+                        <li>Protects boys AND girls equally</li>
+                        <li>Covers all forms of sexual abuse</li>
+                        <li>Ensures fast-track trials</li>
+                        <li>Provides support for victims</li>
+                    </ul>
+                </div>
+
+                <div class="law-card">
+                    <h3>👶 Child Rights</h3>
+                    <p><strong>Every child has the right to:</strong></p>
+                    <ul>
+                        <li>🏠 Safety and protection</li>
+                        <li>🎓 Education</li>
+                        <li>💚 Healthcare</li>
+                        <li>🗣️ Be heard and respected</li>
+                        <li>🎮 Play and leisure</li>
+                        <li>👨‍👩‍👧 Family care</li>
+                    </ul>
+                </div>
+
+                <div class="law-card">
+                    <h3>📱 Cyber Safety Laws</h3>
+                    <p><strong>IT Act & Online Protection</strong></p>
+                    <p>Laws that protect you online:</p>
+                    <ul>
+                        <li>Cyberbullying is punishable</li>
+                        <li>Sharing inappropriate content is illegal</li>
+                        <li>Online harassment has consequences</li>
+                        <li>Privacy rights are protected</li>
+                    </ul>
+                </div>
+
+                <div class="law-card">
+                    <h3>🏫 Right to Education</h3>
+                    <p><strong>RTE Act 2009</strong></p>
+                    <p>Every child aged 6-14 has the right to free and compulsory education in a safe environment.</p>
+                    <ul>
+                        <li>Free education in neighborhood schools</li>
+                        <li>No discrimination allowed</li>
+                        <li>Safe and inclusive environment</li>
+                        <li>Quality education for all</li>
+                    </ul>
+                </div>
+
+                <div class="law-card">
+                    <h3>⚠️ Mandatory Reporting</h3>
+                    <p><strong>Adults Must Report Abuse</strong></p>
+                    <p>Teachers, doctors, and other adults MUST report child abuse when they learn about it.</p>
+                    <ul>
+                        <li>Failure to report is punishable</li>
+                        <li>Protects children immediately</li>
+                        <li>Ensures quick intervention</li>
+                        <li>Everyone has a responsibility</li>
+                    </ul>
+                </div>
+
+                <div class="law-card">
+                    <h3>🎯 Your Rights Summary</h3>
+                    <p><strong>Remember These Important Rights:</strong></p>
+                    <ul>
+                        <li>✋ Right to say NO to uncomfortable touch</li>
+                        <li>🗣️ Right to speak up and be believed</li>
+                        <li>🛡️ Right to protection from harm</li>
+                        <li>💙 Right to get help when needed</li>
+                        <li>⚖️ Right to justice if harmed</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Quizzes Page -->
+        <div id="quizzes" class="page">
+            <h1 class="page-title">Test Your Safety Knowledge! 🎮</h1>
+            <div class="quiz-container">
+                <!-- Quiz Start Section -->
+                <div id="quiz-start" class="quiz-section active">
+                    <h2>🌟 Super Safety Quiz 🌟</h2>
+                    <p style="font-size: 18px; color: #666; margin: 20px 0; line-height: 1.8;">
+                        Welcome, young hero! Are you ready to test your safety knowledge? 
+                        This quiz will help you learn how to stay safe and protect yourself and others!
+                    </p>
+                    <div style="background: linear-gradient(135deg, #ffeef8, #e3f2ff); padding: 30px; border-radius: 15px; margin: 30px 0;">
+                        <h3 style="color: #ff6ec7; margin-bottom: 15px;">📋 Quiz Details:</h3>
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="padding: 10px 0; color: #333;">✅ 6 important safety questions</li>
+                            <li style="padding: 10px 0; color: #333;">⏱️ Take your time - no rush!</li>
+                            <li style="padding: 10px 0; color: #333;">🎓 Learn from every question</li>
+                            <li style="padding: 10px 0; color: #333;">🏆 Earn your Safety Champion badge!</li>
+                        </ul>
+                    </div>
+                    <button class="quiz-btn" onclick="startQuiz()" style="padding: 20px 50px; font-size: 22px; background: linear-gradient(135deg, #ff6ec7, #ff9a9e); color: white; border: none; border-radius: 50px; cursor: pointer; box-shadow: 0 10px 30px rgba(255, 110, 199, 0.4); font-weight: bold;">
+                        Start Quiz! 🚀
+                    </button>
+                </div>
+
+                <!-- Quiz Questions Section -->
+                <div id="quiz-questions" class="quiz-section">
+                    <div class="progress-bar" style="background: #e0e0e0; height: 10px; border-radius: 10px; margin-bottom: 30px; overflow: hidden;">
+                        <div id="progress" style="background: linear-gradient(135deg, #ff6ec7, #4a90e2); height: 100%; width: 0%; transition: width 0.3s ease;"></div>
+                    </div>
+                    <div class="question-number" style="text-align: center; color: #666; margin-bottom: 20px;">
+                        Question <span id="current-q">1</span> of <span id="total-q">6</span>
+                    </div>
+                    <div id="question-container"></div>
+                    <div id="feedback" class="feedback"></div>
+                    <div class="quiz-navigation" style="margin-top: 30px; text-align: center;">
+                        <button class="quiz-btn" onclick="submitAnswer()" style="padding: 15px 40px; font-size: 18px; background: linear-gradient(135deg, #4a90e2, #667eea); color: white; border: none; border-radius: 50px; cursor: pointer; box-shadow: 0 8px 20px rgba(74, 144, 226, 0.4); font-weight: bold;">
+                            Submit Answer
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Quiz Results Section -->
+                <div id="quiz-results" class="quiz-section">
+                    <h2 style="text-align: center; color: #ff6ec7; margin-bottom: 30px;">🎉 Quiz Complete! 🎉</h2>
+                    <div style="background: linear-gradient(135deg, #ffeef8, #e3f2ff); padding: 40px; border-radius: 20px; text-align: center;">
+                        <div id="score-display" style="font-size: 48px; font-weight: bold; color: #ff6ec7; margin-bottom: 30px;"></div>
+                        <div id="superhero-message" style="font-size: 18px; color: #333; line-height: 1.8;"></div>
+                    </div>
+                    <div style="margin-top: 40px; text-align: center;">
+                        <button class="quiz-btn" onclick="restartQuiz()" style="padding: 18px 45px; font-size: 20px; background: linear-gradient(135deg, #ff6ec7, #ff9a9e); color: white; border: none; border-radius: 50px; cursor: pointer; box-shadow: 0 10px 30px rgba(255, 110, 199, 0.4); font-weight: bold; margin-right: 15px;">
+                            Try Again 🔄
+                        </button>
+                        <button class="quiz-btn" onclick="showPage('home')" style="padding: 18px 45px; font-size: 20px; background: linear-gradient(135deg, #4a90e2, #667eea); color: white; border: none; border-radius: 50px; cursor: pointer; box-shadow: 0 10px 30px rgba(74, 144, 226, 0.4); font-weight: bold;">
+                            Back to Home 🏠
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Emergency Page -->
+        <div id="emergency" class="page">
+            <h1 class="page-title">Emergency Contacts 🚨</h1>
+            <div style="max-width: 1000px; margin: 0 auto;">
+                <div style="background: linear-gradient(135deg, #ff4757, #ff6348); color: white; padding: 40px; border-radius: 20px; box-shadow: 0 20px 60px rgba(255, 71, 87, 0.4); margin-bottom: 40px; text-align: center; animation: pulse 2s infinite;">
+                    <h2 style="font-size: 36px; margin-bottom: 20px;">📞 CHILDLINE India</h2>
+                    <div style="font-size: 72px; font-weight: bold; margin: 20px 0;">1098</div>
+                    <p style="font-size: 20px; line-height: 1.6;">
+                        Free • 24/7 • Confidential<br>
+                        Available in multiple languages<br>
+                        For ANY child in need of help
+                    </p>
+                </div>
+
+                <div class="laws-container">
+                    <div class="law-card">
+                        <h3>🚔 Police Emergency</h3>
+                        <div style="font-size: 42px; font-weight: bold; color: #ff6ec7; margin: 15px 0;">100</div>
+                        <p>For immediate danger or crime in progress</p>
+                    </div>
+
+                    <div class="law-card">
+                        <h3>🚑 Medical Emergency</h3>
+                        <div style="font-size: 42px; font-weight: bold; color: #ff6ec7; margin: 15px 0;">108</div>
+                        <p>For ambulance and medical help</p>
+                    </div>
+
+                    <div class="law-card">
+                        <h3>👩‍⚕️ Women's Helpline</h3>
+                        <div style="font-size: 42px; font-weight: bold; color: #ff6ec7; margin: 15px 0;">1091</div>
+                        <p>For women and girls in distress</p>
+                    </div>
+
+                    <div class="law-card">
+                        <h3>🆘 National Emergency</h3>
+                        <div style="font-size: 42px; font-weight: bold; color: #ff6ec7; margin: 15px 0;">112</div>
+                        <p>Unified emergency number for all services</p>
+                    </div>
+
+                    <div class="law-card">
+                        <h3>💻 Cyber Crime</h3>
+                        <div style="font-size: 42px; font-weight: bold; color: #ff6ec7; margin: 15px 0;">1930</div>
+                        <p>Report online crimes and cyber bullying</p>
+                    </div>
+
+                    <div class="law-card">
+                        <h3>📱 Missing Child</h3>
+                        <div style="font-size: 42px; font-weight: bold; color: #ff6ec7; margin: 15px 0;">1094</div>
+                        <p>Report missing children immediately</p>
+                    </div>
+                </div>
+
+                <div style="background: white; padding: 40px; border-radius: 20px; box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2); margin-top: 40px;">
+                    <h3 style="color: #ff6ec7; font-size: 28px; margin-bottom: 20px;">🗣️ When to Call for Help:</h3>
+                    <ul style="list-style: none; padding: 0; color: #333; font-size: 18px; line-height: 2;">
+                        <li>✅ Someone touches you inappropriately</li>
+                        <li>✅ You feel unsafe or scared</li>
+                        <li>✅ Someone asks you to keep unsafe secrets</li>
+                        <li>✅ You see someone else being hurt</li>
+                        <li>✅ You're being bullied online or offline</li>
+                        <li>✅ An adult makes you uncomfortable</li>
+                        <li>✅ You need advice about staying safe</li>
+                    </ul>
+                    <div style="background: linear-gradient(135deg, #4a90e2, #667eea); color: white; padding: 25px; border-radius: 15px; margin-top: 30px; text-align: center; font-size: 20px; font-weight: bold;">
+                        💙 Remember: It's NEVER your fault! You deserve to be safe and protected! 💙
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Load JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
