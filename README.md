@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./img.png" alt="Project Banner" width="100%">
+  <img src="./img(1).png" alt="Project Banner" width="100%">
 </p>
 
 # [THE SAFETY SQUAD] 🎯
